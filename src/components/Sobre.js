@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Sobre(){
-    return(<div className="home">
+    return(<div className="page-sobre">
         <h2> Sobre nossa instituição </h2>
         <ul>
             <li>Contatos</li>
