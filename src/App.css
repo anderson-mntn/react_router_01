@@ -13,3 +13,8 @@
   list-style: none;
   gap: .5rem;
 }
+
+.page-home, .page-sobre, .page-aulas{
+  border: solid 2px grey;
+  margin: 8px;
+}
