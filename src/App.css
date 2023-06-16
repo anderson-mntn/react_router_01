@@ -13,6 +13,10 @@
   list-style: none;
   gap: .5rem;
 }
+.header-div ul li a{
+  text-decoration: none;
+  color: white;
+}
 
 .page-home, .page-sobre, .page-aulas{
   border: solid 2px grey;

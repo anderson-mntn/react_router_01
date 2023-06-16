@@ -8,8 +8,8 @@ import router from './routes/Routes'
 function App() {
   return (
     <div className="App">
-    <Header/>
-    <RouterProvider router={router}></RouterProvider>
+      <Header/>
+      <RouterProvider router={router}/>
     </div>
   );
 }

@@ -20,8 +20,17 @@ const router = createBrowserRouter([
   },
   {
     path: "/aulas/a1",
-    element: <div>aula a1</div>
+    element: <h3>aula a1</h3>
   },
+  {
+    path: '/endereço',
+    element: <p>Rua Avenida Brasil, 619, São Paulo</p>
+  },
+  {
+    path: '/contatos',
+    element: <p>Tel: 11 4002-8922, Whatsapp: 99765-4321</p>
+  }
+  ,
   {
     path: "*",
     element: <h4>The page you tryed to access is broken or unavaliable </h4>
