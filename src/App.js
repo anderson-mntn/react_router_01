@@ -1,15 +1,15 @@
 import './App.css';
+import Footer from './components/Footer';
 
 import Header from './components/Header'
-
-import { RouterProvider } from 'react-router-dom';
-import router from './routes/Routes'
+import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
       <Header/>
-      <RouterProvider router={router}/>
+      <Outlet/>
+      <Footer/>
     </div>
   );
 }
