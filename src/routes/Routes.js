@@ -3,22 +3,19 @@ import Aulas from '../components/Aulas';
 
 import Home from '../components/Home';
 import Sobre from '../components/Sobre';
-import Footer from '../components/Footer';
 import App from '../App';
+import ErrorPage from '../components/ErrorPage';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
+    errorElement: <ErrorPage/>,
     children: [
       {
         path: "/",
         element: <Home/>,
-      },
-      {
-        path: "/",
-        element: <Footer/>
       },
       {
         path: "/aulas",
@@ -40,12 +37,6 @@ const router = createBrowserRouter([
         path: '/contatos',
         element: <p>Tel: 11 4002-8922, Whatsapp: 99765-4321</p>
       }
-      ,
-      {
-        path: "*",
-        element: <h4>The page you tryed to access is broken or unavaliable </h4>
-      },
-
     ]
   },
   
