@@ -5,12 +5,15 @@ import Home from '../components/Home';
 import Sobre from '../components/Sobre';
 import App from '../App';
 import ErrorPage from '../components/ErrorPage';
+import ContactDetails from '../components/ContactDetails';
+import Contatos from '../components/Contatos';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
+    // Error page
     errorElement: <ErrorPage/>,
     children: [
       {
@@ -35,7 +38,12 @@ const router = createBrowserRouter([
       },
       {
         path: '/contatos',
-        element: <p>Tel: 11 4002-8922, Whatsapp: 99765-4321</p>
+        element: <Contatos/>
+      },
+      // 5 - nested routes - identificador unico / unique id
+      {
+        path: '/contatos/:id',
+        element: <ContactDetails/>
       }
     ]
   },

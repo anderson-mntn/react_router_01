@@ -7,6 +7,7 @@ export default function Header(){
             <li><Link to={`/`}>Home</Link></li>
             <li><Link to={`/aulas`}>Aulas</Link></li>
             <li><Link to={`/sobre`}>Sobre</Link></li>
+            <li><Link to={`/contatos`}>Contatos</Link></li>
         </ul>
     </div>)
 }
