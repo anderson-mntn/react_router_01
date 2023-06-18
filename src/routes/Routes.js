@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, Navigate} from 'react-router-dom';
 import Aulas from '../components/Aulas';
 
 import Home from '../components/Home';
@@ -44,6 +44,11 @@ const router = createBrowserRouter([
       {
         path: '/contatos/:id',
         element: <ContactDetails/>
+      },
+      // 7 - Navigate para páginas nao EXISTENTES.
+      {
+        path: "oldcontact",
+        element: <Navigate to='/contatos/'/>
       }
     ]
   },
