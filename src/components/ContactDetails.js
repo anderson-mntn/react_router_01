@@ -16,6 +16,7 @@ const ContactDetails = () => {
     const navigate = useNavigate();
 
     const handleContact = () => {
+        toggle();
         setTimeout(()=>{
 
             //comunicação com o db
@@ -31,7 +32,6 @@ const ContactDetails = () => {
         <h2>Exibindo contato numero: {id}</h2>
         <button onClick={handleContact}>Enviar Mensagem</button>
 
-        <button onClick={toggle}>Toggle show</button>
         {isOpen && msg}
         
     </div>)
