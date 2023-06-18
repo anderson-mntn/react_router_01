@@ -40,7 +40,7 @@ const router = createBrowserRouter([
         path: '/contatos',
         element: <Contatos/>
       },
-      // 5 - nested routes - identificador unico / unique id
+      // 5 - nested routes - identificador unico / unique id - dynamic routes 
       {
         path: '/contatos/:id',
         element: <ContactDetails/>
