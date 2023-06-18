@@ -1,8 +1,16 @@
+import React from "react";
+import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
-function ContactDetails (props) {
+const ContactDetails = () => {
 
-    // const msg = 'Voltando para pagina principal....';
+    const msg = 'Voltando para pagina principal....';
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    function toggle() {
+        setIsOpen((isOpen) => !isOpen);
+    }
 
     // 6 - redirect - enviando o usuario para home (ou outro page) após concluir alguma ação
     const navigate = useNavigate();
@@ -22,6 +30,10 @@ function ContactDetails (props) {
           
         <h2>Exibindo contato numero: {id}</h2>
         <button onClick={handleContact}>Enviar Mensagem</button>
+
+        <button onClick={toggle}>Toggle show</button>
+        {isOpen && msg}
+        
     </div>)
 }
 
