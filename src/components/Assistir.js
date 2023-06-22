@@ -12,9 +12,11 @@ export default function Assistir(){
     useEffect(()=>{
         console.log(query.get('v'))
         // dentro de <prototype> terá métodos que podemos usar
+        //query é o que vem depois do interrogação
     })
 
     return(<div className="page">
-        query é o que vem depois do interrogação
+        <iframe width="560" height="315" src={`https://www.youtube.com/embed/${query.get('v')}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        {/* http://localhost:3000/assistir?v=Bq4rmeIvJbs agora o video pode carregar apenas colocando o final do embed code na nossa barra de endereço*/}
     </div>)
 }
