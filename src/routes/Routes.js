@@ -8,6 +8,7 @@ import App from '../App';
 import ErrorPage from '../components/ErrorPage';
 import ContactDetails from '../components/ContactDetails';
 import Contatos from '../components/Contatos';
+import Assistir from '../components/Assistir';
 
 
 const router = createBrowserRouter([
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "/sobre",
         element: <Sobre/>
+      },
+      {
+        path: "/assistir",
+        element: <Assistir/>
       },
       {
         path: "/aulas/:id",
