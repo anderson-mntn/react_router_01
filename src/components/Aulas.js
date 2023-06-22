@@ -6,11 +6,11 @@ import { Link, useLocation } from 'react-router-dom'
 export default function Aulas(){
     
     // pegando o valor da barra de endereço com useMath, que retorna um obj contendo .url
-    const lc = useLocation();
+    // const lc = useLocation();
     
-    useEffect(()=>{
-        console.log(lc)
-    })
+    // useEffect(()=>{
+    //     console.log(lc)
+    // })
 
     return(<div className="page-aulas">
         <h2>Aulas</h2>
