@@ -1,7 +1,8 @@
 import { createBrowserRouter, Navigate} from 'react-router-dom';
-import Aulas from '../components/Aulas';
 
 import Home from '../components/Home';
+import Aula from '../components/Aula'
+import Aulas from '../components/Aulas';
 import Sobre from '../components/Sobre';
 import App from '../App';
 import ErrorPage from '../components/ErrorPage';
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
         element: <Home/>,
       },
       {
-        path: "/aulas",
+        path: "/aulas/",
         element: <Aulas/>,
       },
       {
@@ -29,8 +30,8 @@ const router = createBrowserRouter([
         element: <Sobre/>
       },
       {
-        path: "/aulas/a1",
-        element: <h3>aula a1</h3>
+        path: "/aulas/:id",
+        element: <Aula />
       },
       {
         path: '/endereço',

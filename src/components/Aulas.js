@@ -1,12 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
-import artigos from '../Artigos'
+import dados from '../Dados'
+import { Link, useLocation } from 'react-router-dom'
 
 export default function Aulas(){
+    
+    // pegando o valor da barra de endereço com useMath, que retorna um obj contendo .url
+    const lc = useLocation();
+    
+    useEffect(()=>{
+        console.log(lc)
+    })
+
     return(<div className="page-aulas">
-        <h2>Artigos</h2>
+        <h2>Aulas</h2>
         <ul className='aulas-ul'>
-            {artigos.map(artigo => <li {...artigo.id}>Titulo do artigo: {artigo.title} | Descrição do Artigo: {artigo.desc}</li>)}
+            {dados.map(dado => <li {...dado.id} key={dado.id}><Link to={`${dado.id}`}>Titulo do artigo:</Link> {dado.title} | Descrição do Artigo: {dado.desc}</li>)}
         </ul>
+
     </div>)
 }
