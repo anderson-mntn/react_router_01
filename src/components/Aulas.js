@@ -15,7 +15,7 @@ export default function Aulas(){
     return(<div className="page-aulas">
         <h2>Aulas</h2>
         <ul className='aulas-ul'>
-            {dados.map(dado => <li {...dado.id} key={dado.id}><Link to={`${dado.id}`}>Titulo do artigo:</Link> {dado.title} | Descrição do Artigo: {dado.desc}</li>)}
+            {dados.map(dado => <li {...dado.id} key={dado.id} ><Link to={`${dado.id}`} className='page-aulas-li'>{dado.title} </Link>| Descrição do Artigo: {dado.desc}</li>)}
         </ul>
 
     </div>)
