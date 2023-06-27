@@ -12,6 +12,7 @@ import Assistir from '../components/Assistir';
 
 
 const router = createBrowserRouter([
+
   {
     path: "/",
     element: <App/>,
